@@ -62,6 +62,10 @@
 				<param name="onload" value="true" />
 			</feature>
 		</config-file>
+		 <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+		</config-file>
+
 
 		<framework src="com.google.firebase:firebase-messaging:$FCM_VERSION" />
 
